@@ -25,6 +25,7 @@ before_script:
   - rm -rf Packages/Application/TYPO3.TYPO3CR
   - mv ../TYPO3.TYPO3CR/Travis Travis
   - mv ../TYPO3.TYPO3CR Packages/Application/
+  - sudo apt-get update
   - sudo apt-get install apache2 libapache2-mod-fastcgi --fix-missing
 
   # enable php-fpm
